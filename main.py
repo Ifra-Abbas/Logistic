@@ -16,8 +16,7 @@ def preceptron(X, y):
     for i in range(1000):
         j=np.random.randint(1,100)
         y_hat=step(np.dot(X[j],wights))
-        wights=wights+
-        lr*(y[j]-y_hat)*X[j]
+        wights=wights+lr*(y[j]-y_hat)*X[j]
     return wights[0],wights[1:]
 def step(z):
     if z>0:
